@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*CSS de Tela*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: lightgray;
+}
+
+header h1{
+    padding: 30px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+header ul > li{
+    padding: 10px;
+    display: inline-block;
+    background-color: darkgrey;
+}
+
+main{
+    width: 800px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h2{
+    padding: 15px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+main p{
+    font-size: 1.1em;
+    line-height: 2em;
+}

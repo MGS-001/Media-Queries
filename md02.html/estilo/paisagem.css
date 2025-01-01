@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/*Configuração Deitado (landscape)*/
+
+body{
+    background-position: left bottom;
+    background-image: url("../Imagens/paisagem.jpg");
+}

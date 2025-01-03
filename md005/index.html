@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="stylesheet" href="estilo/style.css">
-    <title>Media Queries</title>
+    <title>Meida Queries</title>
 </head>
 <body>
     <header>
-       <h1>Meu Site</h1>
-       <menu>
-        <ul>
-            <li><a href="#">Opção 1</a></li>
-            <li><a href="#">Opção 2</a></li>
-            <li><a href="#">Opção 3</a></li>
-            <li><a href="#">Opção 4</a></li>
-            <li><a href="#">Opção 5</a></li>
-        </ul>
-       </menu>
+        <h1>Meu Site</h1>
+        <span id="hambuguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="itens">
+            <ul><li><a href="#">Opção 1</a></li></ul>
+            <ul><li><a href="#">Opção 2</a></li></ul>
+            <ul><li><a href="#">Opção 3</a></li></ul>
+            <ul><li><a href="#">Opção 4</a></li></ul>
+            <ul><li><a href="#">Opção 5</a></li></ul>
+        </menu>
     </header>
     <main>
-           <h1>Teste de Media Queries</h1>
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sit nobis mollitia natus! Officia voluptatibus quam quisquam nemo fugiat rerum placeat accusantium nobis possimus modi sunt voluptatum maiores, quia accusamus.
-           Quibusdam, at, in aperiam modi cum consectetur adipisci repellendus inventore nemo nobis unde harum, laboriosam enim beatae. Eveniet impedit hic consequatur, laudantium culpa qui, at unde, numquam quasi voluptatem adipisci.</p>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cupiditate tenetur numquam dignissimos modi earum aspernatur placeat harum! Quo minima dolores obcaecati nemo temporibus? Perferendis omnis reprehenderit incidunt nemo sapiente.
-           Mollitia ipsam numquam porro soluta reprehenderit laudantium odit esse magnam sed dolorem voluptate ducimus optio, doloribus, odio sint possimus ad nostrum omnis doloremque, quaerat corporis neque repudiandae amet ipsa! Quo.</p>
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem pariatur quod debitis quis consequuntur similique autem nulla cum, beatae ducimus illum ullam, nostrum praesentium maiores facere dignissimos fugiat doloribus. Sapiente.
-           Totam, sint. Possimus commodi non odit delectus eligendi sint consectetur, perspiciatis est numquam quidem qui reprehenderit eum quis tempore totam sit omnis! Commodi quasi reprehenderit voluptatem, unde consequatur fuga adipisci?</p>
+        <h1>Teste de Media Queries</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad perferendis consequatur in facilis necessitatibus, laudantium amet blanditiis facere quis, optio vitae! Harum soluta a consectetur quo sapiente repellat deleniti suscipit.
+        Consequuntur aspernatur, quam laudantium ea impedit veritatis blanditiis sint recusandae quia molestias consequatur voluptatibus veniam maiores voluptate eaque earum voluptas fuga explicabo. Necessitatibus vitae debitis rerum facilis ullam delectus eaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga maxime voluptatem quasi commodi veniam nemo quis molestias totam esse doloribus, vel officia dicta est! Eius dolor nobis tempore nisi!
+        Natus repellat placeat alias ad fuga aspernatur perspiciatis corporis quidem pariatur delectus, dolorum, vitae rem aut itaque est cumque, blanditiis consequatur tenetur. Eaque aliquam natus, facere amet fugiat nisi est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate hic quasi laborum maxime perferendis et eius, temporibus tempore? Deserunt sunt quae corrupti minima voluptas velit, quisquam sint possimus earum dicta?
+        Enim repellendus quisquam optio ipsa. Rerum iure fuga non tenetur molestias aut in quod hic deserunt nam sapiente voluptas autem eius id aliquam quo nulla, quos aliquid corporis! Placeat, neque.</p>
     </main>
+   <script>
+       function clickMenu() {
+        if ( itens.style.display == 'block'){
+            itens.style.display = 'none'
+        }
+         else{
+            itens.style.display = 'block'
+         }
+       }
+   </script>
 </body>
 </html>

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* \configuração de Media Querie*/
+
+/*
+ Telas pequena: até 600px
+ Celular: de 600px até 768px
+ Tablets: de 768px até 992px
+ Desktop: de 992px até 1200px
+ Tv: de 1200px para cima
+*/
+
+@media print {
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+ 
+    main h1{
+        color: black;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main::after{
+        text-decoration: overline;
+        content: "Esse arquivo foi tirado do acervo de Marcos Gonçalves";
+    }
+
+    #pc{ display: none;}
+    #celular{ display:none;}
+    #print{ display: block;}
+    #tablet{ display: none;}
+    #tv{ display: none;}
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #pc{ display: none;}
+    #celular{ display:none;}
+    #print{ display: none;}
+    #tablet{ display: block;}
+    #tv{ display: none;}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #pc{ display: block;}
+    #celular{ display:none;}
+    #print{ display: none;}
+    #tablet{ display: none;}
+    #tv{ display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #pc{ display: none;}
+    #celular{ display:none;}
+    #print{ display: none;}
+    #tablet{ display: none;}
+    #tv{ display: block;} 
+}

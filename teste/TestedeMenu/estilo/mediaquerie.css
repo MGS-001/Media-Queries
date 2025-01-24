@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*
+Mobile - até 576 px
+Tablet - de 576 até 1024 px
+Desktop - de 1024 px até 1440 px
+Desktop Grande - Minimo de 1441 px
+*/
+
+@media screen and (min-width: 576px) {
+    #menu{
+        display: block;
+    }
+
+   #menu li{
+    display: inline-block;
+   }
+
+   #menu a {
+     padding: 20px;
+    border: none;
+   }
+
+    #ham{
+        display: none;
+    }
+}

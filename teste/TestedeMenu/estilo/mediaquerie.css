@@ -24,4 +24,8 @@ Desktop Grande - Minimo de 1441 px
     #ham{
         display: none;
     }
+
+    main{
+        max-width: 576px;
+    }
 }

@@ -7,25 +7,25 @@ Desktop - de 1024 px até 1440 px
 Desktop Grande - Minimo de 1441 px
 */
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width:576px) {
     #menu{
         display: block;
     }
+}
 
-   #menu li{
-    display: inline-block;
-   }
+#menu li{
+      display: inline-block;
+}
 
-   #menu a {
-     padding: 20px;
+#menu a{
     border: none;
-   }
+    padding: 20px;
+}
 
-    #ham{
-        display: none;
-    }
+#ham{
+    display: none;
+}
 
-    main{
-        max-width: 576px;
-    }
+main{
+    max-width: 576px;
 }
